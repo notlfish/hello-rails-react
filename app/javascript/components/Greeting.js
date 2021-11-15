@@ -1,5 +1,11 @@
-import React from "react"
+import React from 'react';
+import { shallowEqual, useSelector } from 'react-redux';
 
-const Greeting = () => (<h2>Holi :D</h2>);
+const Greeting = () => {
+  const greeting = useSelector(({ greeting }) => greeting, shallowEqual);
+  return (
+    <h2>{greeting}</h2>
+  );
+};
 
-export default Greeting
+export default Greeting;
