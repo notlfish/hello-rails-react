@@ -3,7 +3,7 @@ const UPDATE_GREETING = 'hello-rails-react/greetings/ADD_GREETINGS';
 const API_SUCCESS = 'hello-rails-react/greetings/API_SUCCESS';
 const API_FAILURE = 'hello-rails-react/greetings/API_SUCCESS';
 
-const initialGreeting = 'Holi :D';
+const initialGreeting = '';
 
 export const updateGreeting = (greeting) => ({
   type: UPDATE_GREETING,
