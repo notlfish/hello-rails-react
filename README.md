@@ -23,7 +23,7 @@ $ cd hello-rails-react
 
 To be able to serve the project on your computer, you'll need to install the developer's dependencies.
 ```bash
-$ bundle install && yarn install
+$ bundle && yarn
 ```
 
 With this, you can use
@@ -32,6 +32,7 @@ $ bin/webpack-dev-server
 ```
 to run the react app, and
 ```bash
+$ rails db:setup
 $ rails s
 ```
 to boot the rails app. Now you can access `localhost:3000` to see the project.
